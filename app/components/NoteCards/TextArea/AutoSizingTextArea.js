@@ -1,3 +1,5 @@
+"use client";
+
 import { useAutosizeTextArea } from "./useAutoSizingTextArea";
 import { useRef } from "react";
 
