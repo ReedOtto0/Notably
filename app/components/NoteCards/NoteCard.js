@@ -47,7 +47,8 @@ export default function NoteCard({ note, noteId }) {
 
   return (
     <li
-      className="border-2 border-black rounded-lg mt-2 py-2 px-3 w-full relative"
+      className="border-2 border-black rounded-lg mt-2 py-2 px-3 relative"
+      style={{ width: "50%" }}
       ref={noteRef}
     >
       <form
@@ -57,7 +58,7 @@ export default function NoteCard({ note, noteId }) {
       >
         <input
           type="text"
-          className="w-full text-lg focus:outline-none resize-none text-base bg-transparent"
+          className="w-full text-lg focus:outline-none resize-none bg-transparent"
           placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
